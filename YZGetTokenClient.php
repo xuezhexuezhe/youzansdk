@@ -1,4 +1,6 @@
 <?php
+namespace youzansdk;
+
 require_once __DIR__ . '/YZHttpClient.php';
 
 class YZGetTokenClient{

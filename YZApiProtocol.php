@@ -1,4 +1,6 @@
 <?php
+namespace youzansdk;
+
 class YZApiProtocol {
     const APP_ID_KEY = 'app_id';
     const METHOD_KEY = 'method';

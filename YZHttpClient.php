@@ -1,4 +1,5 @@
 <?php
+namespace youzansdk;
 
 class YZHttpClient{
     private static $boundary = '';
