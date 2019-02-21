@@ -1,4 +1,6 @@
 ###目录
+获取
+composer require xuezhe/youzansdk
 
 1.通用文件
 - /YZApiProtocol.php
@@ -31,4 +33,4 @@ https://www.youzanyun.com/apilist
 
 2.涉及上传图片的接口仅支持post，建议使用post调用接口
 
-2017.06.22
+2018-12-29
