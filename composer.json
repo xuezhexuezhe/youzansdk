@@ -1,0 +1,16 @@
+{
+    "name": "xuezhe/youzansdk",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xuezhe",
+            "email": "xuezheemail@163.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "youzansdk\\": "youzansdk"
+        }
+      }
+}
