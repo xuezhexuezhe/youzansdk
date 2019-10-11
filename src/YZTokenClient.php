@@ -8,7 +8,7 @@ class YZTokenClient {
     private static $request_url = 'https://open.youzan.com/api/oauthentry/';
 
     public function __construct($access_token) {
-        if ('' == $access_token) throw new Exception('access_token不能为空');
+        if ('' == $access_token) throw new \Exception('access_token不能为空');
         $this->access_token = $access_token;
     }
 
@@ -35,7 +35,7 @@ class YZTokenClient {
 
     private function parse_response($response_data) {
         $data = json_decode($response_data, true);
-        if (null === $data) throw new Exception('response invalid, data: ' . $response_data);
+        if (null === $data) throw new \Exception('response invalid, data: ' . $response_data);
         return $data;
     }
 
@@ -43,7 +43,7 @@ class YZTokenClient {
         if (!is_array($api_params)) $api_params = array();
         $pairs = $this->get_common_params($this->access_token, $method);
         foreach ($api_params as $k => $v) {
-            if (isset($pairs[$k])) throw new Exception('参数名冲突');
+            if (isset($pairs[$k])) throw new \Exception('参数名冲突');
             $pairs[$k] = $v;
         }
 
